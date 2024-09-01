@@ -1,0 +1,190 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+OrionLib:MakeNotification({
+    Name = "Lucas Menu",
+    Content = "Executando.....",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+
+
+local Window = OrionLib:MakeWindow({Name = "Lucas Menu V2", HidePremium = false, SaveConfig = true, ConfigFolder = "Lucas"})
+
+--Player Tab--
+
+local PlayerTab = Window:MakeTab({
+    Name = "Menu",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local PlayerSection = PlayerTab:AddSection({
+    Name = "Menu"
+})
+
+PlayerSection:AddButton({
+    Name = "Lag server",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://pastebin.com/raw/HGBJqVMu",true))())
+      end
+})
+
+PlayerSection:AddButton({
+    Name = "Ver chat privado (off)",
+    Callback = function(value)
+    print()
+      end
+})
+
+PlayerSection:AddButton({
+    Name = "Ver chat privado 2 (off)",
+    Callback = function(value)
+    print()
+      end
+})
+
+local SettingsTab = Window:MakeTab({
+    Name = "Funçoes",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local SettingsSection = SettingsTab:AddSection({
+    Name = "Funçoes"
+})
+
+SettingsSection:AddButton({
+    Name = "Esp V2",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/webcriamanca/ESP-LucasMenu-/main/esp%20lucasmenu",true))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "ESP V1",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/webcriamanca/LucasMenu-ESP-/main/LucasMenu%20(ESP)",true))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "aimbot (PC)",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/webcriamanca/LucasMenu-aimbot-/main/LucasMenu%20(aimbot)",true))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "FLY GUI V3",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "Infinity Yield",
+    Callback = function(value)
+    print(loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "Silent aim",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua",true))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "LucasMenu V1",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/webcriamanca/LucasMenu/main/LucasMenu%20V1",true))() )
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "God Mode",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "Noclip",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/webcriamanca/Noclip/main/noclip",true))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "ESP OP",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua",true))())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "kill/fling all (OFF)",
+    Callback = function(value)
+    print()
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "F3X btools",
+    Callback = function(value)
+    print(loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)())
+      end
+})
+
+SettingsSection:AddButton({
+    Name = "Aimbot 2 (off) Muito lag",
+    Callback = function(value)
+    print()
+      end
+})
+
+local configTab = Window:MakeTab({
+    Name = "config",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local configSection = configTab:AddSection({
+    Name = "config"
+})
+
+configSection:AddButton({
+    Name = "Sit",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/retpirato/Roblox-Scripts/master/Sit.lua",true))())
+      end
+})
+
+configSection:AddButton({
+    Name = "speed Menu",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://pastebin.com/raw/1BEgf70g",true))())
+      end
+})
+
+configSection:AddButton({
+    Name = "inf jump Menu",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://pastebin.com/raw/1UmLspx5",true))())
+      end
+})
+
+configSection:AddButton({
+    Name = "invisible",
+    Callback = function(value)
+    print(loadstring(game:HttpGet("https://pastebin.com/raw/uUtRsAX5"))())
+      end
+})
+
+configSection:AddButton({
+	Name = "Destruir UI",
+	Callback = function()
+        OrionLib:Destroy()
+  	end    
+})
